@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A5BE06E1C358AD600B8A65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE06D1C358AD600B8A65E /* AppDelegate.swift */; };
+		3A5BE0701C358AD600B8A65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE06F1C358AD600B8A65E /* ViewController.swift */; };
+		3A5BE0731C358AD600B8A65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0711C358AD600B8A65E /* Main.storyboard */; };
+		3A5BE0751C358AD700B8A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0741C358AD700B8A65E /* Assets.xcassets */; };
+		3A5BE0781C358AD700B8A65E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0761C358AD700B8A65E /* LaunchScreen.storyboard */; };
+		3A5BE0831C358AD700B8A65E /* iTunesTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0821C358AD700B8A65E /* iTunesTVTests.swift */; };
+		3A5BE08E1C358AD700B8A65E /* iTunesTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE08D1C358AD700B8A65E /* iTunesTVUITests.swift */; };
+		3A5BE0931C358AD700B8A65E /* iTunesTV WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3A5BE0921C358AD700B8A65E /* iTunesTV WatchKit App.app */; };
+		3A5BE0991C358AD700B8A65E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0971C358AD700B8A65E /* Interface.storyboard */; };
+		3A5BE09B1C358AD700B8A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE09A1C358AD700B8A65E /* Assets.xcassets */; };
+		3A5BE0A21C358AD700B8A65E /* iTunesTV WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A5BE0A11C358AD700B8A65E /* iTunesTV WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A5BE0A71C358AD700B8A65E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0A61C358AD700B8A65E /* InterfaceController.swift */; };
+		3A5BE0A91C358AD700B8A65E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0A81C358AD700B8A65E /* ExtensionDelegate.swift */; };
+		3A5BE0AB1C358AD700B8A65E /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */; };
+		3A5BE0AD1C358AD700B8A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A5BE07F1C358AD700B8A65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5BE0621C358AD600B8A65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5BE0691C358AD600B8A65E;
+			remoteInfo = iTunesTV;
+		};
+		3A5BE08A1C358AD700B8A65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5BE0621C358AD600B8A65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5BE0691C358AD600B8A65E;
+			remoteInfo = iTunesTV;
+		};
+		3A5BE0941C358AD700B8A65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5BE0621C358AD600B8A65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5BE0911C358AD700B8A65E;
+			remoteInfo = "iTunesTV WatchKit App";
+		};
+		3A5BE0A31C358AD700B8A65E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5BE0621C358AD600B8A65E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5BE0A01C358AD700B8A65E;
+			remoteInfo = "iTunesTV WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A5BE0B41C358AD700B8A65E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3A5BE0A21C358AD700B8A65E /* iTunesTV WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE0B81C358AD700B8A65E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3A5BE0931C358AD700B8A65E /* iTunesTV WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A5BE06A1C358AD600B8A65E /* iTunesTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5BE06D1C358AD600B8A65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A5BE06F1C358AD600B8A65E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A5BE0721C358AD600B8A65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A5BE0741C358AD700B8A65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A5BE0771C358AD700B8A65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A5BE0791C358AD700B8A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5BE07E1C358AD700B8A65E /* iTunesTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5BE0821C358AD700B8A65E /* iTunesTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesTVTests.swift; sourceTree = "<group>"; };
+		3A5BE0841C358AD700B8A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5BE0891C358AD700B8A65E /* iTunesTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5BE08D1C358AD700B8A65E /* iTunesTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesTVUITests.swift; sourceTree = "<group>"; };
+		3A5BE08F1C358AD700B8A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5BE0921C358AD700B8A65E /* iTunesTV WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunesTV WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5BE0981C358AD700B8A65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3A5BE09A1C358AD700B8A65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A5BE09C1C358AD700B8A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5BE0A11C358AD700B8A65E /* iTunesTV WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iTunesTV WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5BE0A61C358AD700B8A65E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3A5BE0A81C358AD700B8A65E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A5BE0AE1C358AD700B8A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A5BE0671C358AD600B8A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE07B1C358AD700B8A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE0861C358AD700B8A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE09E1C358AD700B8A65E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A5BE0611C358AD600B8A65E = {
+			isa = PBXGroup;
+			children = (
+				3A5BE06C1C358AD600B8A65E /* iTunesTV */,
+				3A5BE0811C358AD700B8A65E /* iTunesTVTests */,
+				3A5BE08C1C358AD700B8A65E /* iTunesTVUITests */,
+				3A5BE0961C358AD700B8A65E /* iTunesTV WatchKit App */,
+				3A5BE0A51C358AD700B8A65E /* iTunesTV WatchKit Extension */,
+				3A5BE06B1C358AD600B8A65E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A5BE06B1C358AD600B8A65E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A5BE06A1C358AD600B8A65E /* iTunesTV.app */,
+				3A5BE07E1C358AD700B8A65E /* iTunesTVTests.xctest */,
+				3A5BE0891C358AD700B8A65E /* iTunesTVUITests.xctest */,
+				3A5BE0921C358AD700B8A65E /* iTunesTV WatchKit App.app */,
+				3A5BE0A11C358AD700B8A65E /* iTunesTV WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A5BE06C1C358AD600B8A65E /* iTunesTV */ = {
+			isa = PBXGroup;
+			children = (
+				3A5BE06D1C358AD600B8A65E /* AppDelegate.swift */,
+				3A5BE06F1C358AD600B8A65E /* ViewController.swift */,
+				3A5BE0711C358AD600B8A65E /* Main.storyboard */,
+				3A5BE0741C358AD700B8A65E /* Assets.xcassets */,
+				3A5BE0761C358AD700B8A65E /* LaunchScreen.storyboard */,
+				3A5BE0791C358AD700B8A65E /* Info.plist */,
+			);
+			path = iTunesTV;
+			sourceTree = "<group>";
+		};
+		3A5BE0811C358AD700B8A65E /* iTunesTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A5BE0821C358AD700B8A65E /* iTunesTVTests.swift */,
+				3A5BE0841C358AD700B8A65E /* Info.plist */,
+			);
+			path = iTunesTVTests;
+			sourceTree = "<group>";
+		};
+		3A5BE08C1C358AD700B8A65E /* iTunesTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A5BE08D1C358AD700B8A65E /* iTunesTVUITests.swift */,
+				3A5BE08F1C358AD700B8A65E /* Info.plist */,
+			);
+			path = iTunesTVUITests;
+			sourceTree = "<group>";
+		};
+		3A5BE0961C358AD700B8A65E /* iTunesTV WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3A5BE0971C358AD700B8A65E /* Interface.storyboard */,
+				3A5BE09A1C358AD700B8A65E /* Assets.xcassets */,
+				3A5BE09C1C358AD700B8A65E /* Info.plist */,
+			);
+			path = "iTunesTV WatchKit App";
+			sourceTree = "<group>";
+		};
+		3A5BE0A51C358AD700B8A65E /* iTunesTV WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A5BE0A61C358AD700B8A65E /* InterfaceController.swift */,
+				3A5BE0A81C358AD700B8A65E /* ExtensionDelegate.swift */,
+				3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */,
+				3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */,
+				3A5BE0AE1C358AD700B8A65E /* Info.plist */,
+			);
+			path = "iTunesTV WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A5BE0691C358AD600B8A65E /* iTunesTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5BE0B91C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTV" */;
+			buildPhases = (
+				3A5BE0661C358AD600B8A65E /* Sources */,
+				3A5BE0671C358AD600B8A65E /* Frameworks */,
+				3A5BE0681C358AD600B8A65E /* Resources */,
+				3A5BE0B81C358AD700B8A65E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A5BE0951C358AD700B8A65E /* PBXTargetDependency */,
+			);
+			name = iTunesTV;
+			productName = iTunesTV;
+			productReference = 3A5BE06A1C358AD600B8A65E /* iTunesTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A5BE07D1C358AD700B8A65E /* iTunesTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5BE0BC1C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTVTests" */;
+			buildPhases = (
+				3A5BE07A1C358AD700B8A65E /* Sources */,
+				3A5BE07B1C358AD700B8A65E /* Frameworks */,
+				3A5BE07C1C358AD700B8A65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A5BE0801C358AD700B8A65E /* PBXTargetDependency */,
+			);
+			name = iTunesTVTests;
+			productName = iTunesTVTests;
+			productReference = 3A5BE07E1C358AD700B8A65E /* iTunesTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A5BE0881C358AD700B8A65E /* iTunesTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5BE0BF1C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTVUITests" */;
+			buildPhases = (
+				3A5BE0851C358AD700B8A65E /* Sources */,
+				3A5BE0861C358AD700B8A65E /* Frameworks */,
+				3A5BE0871C358AD700B8A65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A5BE08B1C358AD700B8A65E /* PBXTargetDependency */,
+			);
+			name = iTunesTVUITests;
+			productName = iTunesTVUITests;
+			productReference = 3A5BE0891C358AD700B8A65E /* iTunesTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3A5BE0911C358AD700B8A65E /* iTunesTV WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5BE0B51C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTV WatchKit App" */;
+			buildPhases = (
+				3A5BE0901C358AD700B8A65E /* Resources */,
+				3A5BE0B41C358AD700B8A65E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A5BE0A41C358AD700B8A65E /* PBXTargetDependency */,
+			);
+			name = "iTunesTV WatchKit App";
+			productName = "iTunesTV WatchKit App";
+			productReference = 3A5BE0921C358AD700B8A65E /* iTunesTV WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3A5BE0A01C358AD700B8A65E /* iTunesTV WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5BE0B11C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTV WatchKit Extension" */;
+			buildPhases = (
+				3A5BE09D1C358AD700B8A65E /* Sources */,
+				3A5BE09E1C358AD700B8A65E /* Frameworks */,
+				3A5BE09F1C358AD700B8A65E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iTunesTV WatchKit Extension";
+			productName = "iTunesTV WatchKit Extension";
+			productReference = 3A5BE0A11C358AD700B8A65E /* iTunesTV WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A5BE0621C358AD600B8A65E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Drew Westcott";
+				TargetAttributes = {
+					3A5BE0691C358AD600B8A65E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5AZ7M68G8R;
+					};
+					3A5BE07D1C358AD700B8A65E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5AZ7M68G8R;
+						TestTargetID = 3A5BE0691C358AD600B8A65E;
+					};
+					3A5BE0881C358AD700B8A65E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5AZ7M68G8R;
+						TestTargetID = 3A5BE0691C358AD600B8A65E;
+					};
+					3A5BE0911C358AD700B8A65E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5AZ7M68G8R;
+					};
+					3A5BE0A01C358AD700B8A65E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5AZ7M68G8R;
+					};
+				};
+			};
+			buildConfigurationList = 3A5BE0651C358AD600B8A65E /* Build configuration list for PBXProject "iTunesTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A5BE0611C358AD600B8A65E;
+			productRefGroup = 3A5BE06B1C358AD600B8A65E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A5BE0691C358AD600B8A65E /* iTunesTV */,
+				3A5BE07D1C358AD700B8A65E /* iTunesTVTests */,
+				3A5BE0881C358AD700B8A65E /* iTunesTVUITests */,
+				3A5BE0911C358AD700B8A65E /* iTunesTV WatchKit App */,
+				3A5BE0A01C358AD700B8A65E /* iTunesTV WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A5BE0681C358AD600B8A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5BE0781C358AD700B8A65E /* LaunchScreen.storyboard in Resources */,
+				3A5BE0751C358AD700B8A65E /* Assets.xcassets in Resources */,
+				3A5BE0731C358AD600B8A65E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE07C1C358AD700B8A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE0871C358AD700B8A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE0901C358AD700B8A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5BE09B1C358AD700B8A65E /* Assets.xcassets in Resources */,
+				3A5BE0991C358AD700B8A65E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE09F1C358AD700B8A65E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5BE0AD1C358AD700B8A65E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A5BE0661C358AD600B8A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5BE0701C358AD600B8A65E /* ViewController.swift in Sources */,
+				3A5BE06E1C358AD600B8A65E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE07A1C358AD700B8A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5BE0831C358AD700B8A65E /* iTunesTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE0851C358AD700B8A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5BE08E1C358AD700B8A65E /* iTunesTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A5BE09D1C358AD700B8A65E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5BE0A91C358AD700B8A65E /* ExtensionDelegate.swift in Sources */,
+				3A5BE0A71C358AD700B8A65E /* InterfaceController.swift in Sources */,
+				3A5BE0AB1C358AD700B8A65E /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A5BE0801C358AD700B8A65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5BE0691C358AD600B8A65E /* iTunesTV */;
+			targetProxy = 3A5BE07F1C358AD700B8A65E /* PBXContainerItemProxy */;
+		};
+		3A5BE08B1C358AD700B8A65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5BE0691C358AD600B8A65E /* iTunesTV */;
+			targetProxy = 3A5BE08A1C358AD700B8A65E /* PBXContainerItemProxy */;
+		};
+		3A5BE0951C358AD700B8A65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5BE0911C358AD700B8A65E /* iTunesTV WatchKit App */;
+			targetProxy = 3A5BE0941C358AD700B8A65E /* PBXContainerItemProxy */;
+		};
+		3A5BE0A41C358AD700B8A65E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5BE0A01C358AD700B8A65E /* iTunesTV WatchKit Extension */;
+			targetProxy = 3A5BE0A31C358AD700B8A65E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A5BE0711C358AD600B8A65E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5BE0721C358AD600B8A65E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A5BE0761C358AD700B8A65E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5BE0771C358AD700B8A65E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3A5BE0971C358AD700B8A65E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5BE0981C358AD700B8A65E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A5BE0AF1C358AD700B8A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A5BE0B01C358AD700B8A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A5BE0B21C358AD700B8A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iTunesTV WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTV.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		3A5BE0B31C358AD700B8A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iTunesTV WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTV.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		3A5BE0B61C358AD700B8A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = iTunesTV_WatchKit_Extension;
+				INFOPLIST_FILE = "iTunesTV WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTV.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		3A5BE0B71C358AD700B8A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = iTunesTV_WatchKit_Extension;
+				INFOPLIST_FILE = "iTunesTV WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTV.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		3A5BE0BA1C358AD700B8A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iTunesTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A5BE0BB1C358AD700B8A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iTunesTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A5BE0BD1C358AD700B8A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iTunesTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesTV.app/iTunesTV";
+			};
+			name = Debug;
+		};
+		3A5BE0BE1C358AD700B8A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iTunesTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesTV.app/iTunesTV";
+			};
+			name = Release;
+		};
+		3A5BE0C01C358AD700B8A65E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iTunesTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iTunesTV;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3A5BE0C11C358AD700B8A65E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iTunesTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iTunesTV;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A5BE0651C358AD600B8A65E /* Build configuration list for PBXProject "iTunesTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5BE0AF1C358AD700B8A65E /* Debug */,
+				3A5BE0B01C358AD700B8A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A5BE0B11C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTV WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5BE0B21C358AD700B8A65E /* Debug */,
+				3A5BE0B31C358AD700B8A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A5BE0B51C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTV WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5BE0B61C358AD700B8A65E /* Debug */,
+				3A5BE0B71C358AD700B8A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A5BE0B91C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5BE0BA1C358AD700B8A65E /* Debug */,
+				3A5BE0BB1C358AD700B8A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A5BE0BC1C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5BE0BD1C358AD700B8A65E /* Debug */,
+				3A5BE0BE1C358AD700B8A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A5BE0BF1C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5BE0C01C358AD700B8A65E /* Debug */,
+				3A5BE0C11C358AD700B8A65E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A5BE0621C358AD600B8A65E /* Project object */;
+}
