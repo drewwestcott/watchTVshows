@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A5880AE1C36AEE100C74980 /* tv-signal-antenna-radio-internet-512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A5880AD1C36AEE100C74980 /* tv-signal-antenna-radio-internet-512.jpg */; };
 		3A5BE06E1C358AD600B8A65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE06D1C358AD600B8A65E /* AppDelegate.swift */; };
 		3A5BE0701C358AD600B8A65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE06F1C358AD600B8A65E /* ViewController.swift */; };
 		3A5BE0731C358AD600B8A65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0711C358AD600B8A65E /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		3A5BE0A91C358AD700B8A65E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0A81C358AD700B8A65E /* ExtensionDelegate.swift */; };
 		3A5BE0AB1C358AD700B8A65E /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */; };
 		3A5BE0AD1C358AD700B8A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */; };
+		3A5BE0C31C35963E00B8A65E /* tvRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0C21C35963E00B8A65E /* tvRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A5880AD1C36AEE100C74980 /* tv-signal-antenna-radio-internet-512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tv-signal-antenna-radio-internet-512.jpg"; sourceTree = "<group>"; };
 		3A5BE06A1C358AD600B8A65E /* iTunesTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5BE06D1C358AD600B8A65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5BE06F1C358AD600B8A65E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 		3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5BE0AE1C358AD700B8A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5BE0C21C35963E00B8A65E /* tvRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tvRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 			children = (
 				3A5BE0971C358AD700B8A65E /* Interface.storyboard */,
 				3A5BE09A1C358AD700B8A65E /* Assets.xcassets */,
+				3A5880AD1C36AEE100C74980 /* tv-signal-antenna-radio-internet-512.jpg */,
 				3A5BE09C1C358AD700B8A65E /* Info.plist */,
 			);
 			path = "iTunesTV WatchKit App";
@@ -211,6 +216,7 @@
 				3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */,
 				3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */,
 				3A5BE0AE1C358AD700B8A65E /* Info.plist */,
+				3A5BE0C21C35963E00B8A65E /* tvRowController.swift */,
 			);
 			path = "iTunesTV WatchKit Extension";
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A5BE09B1C358AD700B8A65E /* Assets.xcassets in Resources */,
+				3A5880AE1C36AEE100C74980 /* tv-signal-antenna-radio-internet-512.jpg in Resources */,
 				3A5BE0991C358AD700B8A65E /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +446,7 @@
 			files = (
 				3A5BE0A91C358AD700B8A65E /* ExtensionDelegate.swift in Sources */,
 				3A5BE0A71C358AD700B8A65E /* InterfaceController.swift in Sources */,
+				3A5BE0C31C35963E00B8A65E /* tvRowController.swift in Sources */,
 				3A5BE0AB1C358AD700B8A65E /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,6 +736,7 @@
 				3A5BE0B31C358AD700B8A65E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5BE0B51C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTV WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -736,6 +745,7 @@
 				3A5BE0B71C358AD700B8A65E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5BE0B91C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTV" */ = {
 			isa = XCConfigurationList;
@@ -744,6 +754,7 @@
 				3A5BE0BB1C358AD700B8A65E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5BE0BC1C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTVTests" */ = {
 			isa = XCConfigurationList;
@@ -752,6 +763,7 @@
 				3A5BE0BE1C358AD700B8A65E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A5BE0BF1C358AD700B8A65E /* Build configuration list for PBXNativeTarget "iTunesTVUITests" */ = {
 			isa = XCConfigurationList;
@@ -760,6 +772,7 @@
 				3A5BE0C11C358AD700B8A65E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
