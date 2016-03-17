@@ -2,14 +2,16 @@
 //  tvRowController.swift
 //  iTunesTV
 //
-//  Created by Drew Westcott on 31/12/2015.
-//  Copyright © 2015 Drew Westcott. All rights reserved.
+//  Created by Drew Westcott on 01/01/2016.
+//  Copyright © 2016 Drew Westcott. All rights reserved.
 //
 
-import UIKit
 import WatchKit
+import Foundation
+
 
 class tvRowController: NSObject {
+    
+    @IBOutlet var showName: WKInterfaceLabel!
 
-    @IBOutlet var label: WKInterfaceLabel!
 }

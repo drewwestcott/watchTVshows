@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A5880AE1C36AEE100C74980 /* tv-signal-antenna-radio-internet-512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A5880AD1C36AEE100C74980 /* tv-signal-antenna-radio-internet-512.jpg */; };
+		3A5880B01C36BFFB00C74980 /* tvRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5880AF1C36BFFB00C74980 /* tvRowController.swift */; };
+		3A5880B21C391F3B00C74980 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5880B11C391F3B00C74980 /* NotificationController.swift */; };
 		3A5BE06E1C358AD600B8A65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE06D1C358AD600B8A65E /* AppDelegate.swift */; };
 		3A5BE0701C358AD600B8A65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE06F1C358AD600B8A65E /* ViewController.swift */; };
 		3A5BE0731C358AD600B8A65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0711C358AD600B8A65E /* Main.storyboard */; };
@@ -23,7 +25,8 @@
 		3A5BE0A91C358AD700B8A65E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0A81C358AD700B8A65E /* ExtensionDelegate.swift */; };
 		3A5BE0AB1C358AD700B8A65E /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */; };
 		3A5BE0AD1C358AD700B8A65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */; };
-		3A5BE0C31C35963E00B8A65E /* tvRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5BE0C21C35963E00B8A65E /* tvRowController.swift */; };
+		3AB2AC1D1C4C558C006F8DF5 /* showDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2AC1C1C4C558C006F8DF5 /* showDetailInterfaceController.swift */; };
+		3AE567221C3C4C32008E622F /* NotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 3AE567211C3C4C32008E622F /* NotificationPayload.apns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,8 @@
 
 /* Begin PBXFileReference section */
 		3A5880AD1C36AEE100C74980 /* tv-signal-antenna-radio-internet-512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tv-signal-antenna-radio-internet-512.jpg"; sourceTree = "<group>"; };
+		3A5880AF1C36BFFB00C74980 /* tvRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tvRowController.swift; sourceTree = "<group>"; };
+		3A5880B11C391F3B00C74980 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		3A5BE06A1C358AD600B8A65E /* iTunesTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5BE06D1C358AD600B8A65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5BE06F1C358AD600B8A65E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +112,8 @@
 		3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5BE0AE1C358AD700B8A65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A5BE0C21C35963E00B8A65E /* tvRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tvRowController.swift; sourceTree = "<group>"; };
+		3AB2AC1C1C4C558C006F8DF5 /* showDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showDetailInterfaceController.swift; sourceTree = "<group>"; };
+		3AE567211C3C4C32008E622F /* NotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,14 +217,25 @@
 		3A5BE0A51C358AD700B8A65E /* iTunesTV WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3AE567201C3C4C04008E622F /* Supporting Files */,
 				3A5BE0A61C358AD700B8A65E /* InterfaceController.swift */,
 				3A5BE0A81C358AD700B8A65E /* ExtensionDelegate.swift */,
 				3A5BE0AA1C358AD700B8A65E /* GlanceController.swift */,
 				3A5BE0AC1C358AD700B8A65E /* Assets.xcassets */,
 				3A5BE0AE1C358AD700B8A65E /* Info.plist */,
-				3A5BE0C21C35963E00B8A65E /* tvRowController.swift */,
+				3A5880AF1C36BFFB00C74980 /* tvRowController.swift */,
+				3A5880B11C391F3B00C74980 /* NotificationController.swift */,
+				3AB2AC1C1C4C558C006F8DF5 /* showDetailInterfaceController.swift */,
 			);
 			path = "iTunesTV WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3AE567201C3C4C04008E622F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AE567211C3C4C32008E622F /* NotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A5BE0AD1C358AD700B8A65E /* Assets.xcassets in Resources */,
+				3AE567221C3C4C32008E622F /* NotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +462,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A5880B21C391F3B00C74980 /* NotificationController.swift in Sources */,
 				3A5BE0A91C358AD700B8A65E /* ExtensionDelegate.swift in Sources */,
 				3A5BE0A71C358AD700B8A65E /* InterfaceController.swift in Sources */,
-				3A5BE0C31C35963E00B8A65E /* tvRowController.swift in Sources */,
+				3A5880B01C36BFFB00C74980 /* tvRowController.swift in Sources */,
 				3A5BE0AB1C358AD700B8A65E /* GlanceController.swift in Sources */,
+				3AB2AC1D1C4C558C006F8DF5 /* showDetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,11 +639,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = iTunesTV_WatchKit_Extension;
 				INFOPLIST_FILE = "iTunesTV WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTV.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -635,11 +658,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = iTunesTV_WatchKit_Extension;
 				INFOPLIST_FILE = "iTunesTV WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.drewwestcott.iTunesTV.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;

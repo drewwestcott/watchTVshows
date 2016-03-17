@@ -10,26 +10,35 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iTunesTV_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label width="1" alignment="left" text="Latest Shows" textAlignment="center" id="262-Zn-Msz">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button width="1" alignment="left" title="Updating..." id="vNK-qm-S3H">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
                         <table alignment="left" id="igy-vN-sip">
                             <items>
-                                <tableRow identifier="tvRowController" id="Q0P-Mm-MsU" customClass="tvRowController" customModule="iTunesTV_WatchKit_Extension">
+                                <tableRow identifier="tvRow" id="Q0P-Mm-MsU" customClass="tvRowController" customModule="iTunesTV_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="iJ1-XR-UwN">
                                         <items>
-                                            <label width="1" alignment="left" text="Label" baselineAdjustment="alignCenters" numberOfLines="2" id="Xqy-wk-y04">
+                                            <label width="1" height="1" alignment="left" text="Label" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="2" id="Xqy-wk-y04">
                                                 <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             </label>
                                         </items>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
                                     <connections>
-                                        <outlet property="label" destination="Xqy-wk-y04" id="cme-Zp-gNS"/>
-                                        <outlet property="tvTable" destination="iJ1-XR-UwN" id="szw-gL-tB6"/>
+                                        <outlet property="showName" destination="Xqy-wk-y04" id="nLt-bz-wWc"/>
+                                        <segue destination="bRu-Ev-Dmt" kind="push" id="0Ad-7Q-AZq"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
-                        <outlet property="tvTable" destination="Q0P-Mm-MsU" id="zrp-u1-FW9"/>
+                        <outlet property="tvTable" destination="igy-vN-sip" id="I56-VE-AVa"/>
+                        <outlet property="updatingButton" destination="vNK-qm-S3H" id="JmC-q5-fJv"/>
                     </connections>
                 </controller>
             </objects>
@@ -40,13 +49,68 @@
             <objects>
                 <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="iTunesTV_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="gv7-I2-MZq"/>
-                        <group alignment="left" id="eew-Gs-W6Y"/>
+                        <group alignment="left" id="gv7-I2-MZq">
+                            <items>
+                                <label width="1" alignment="left" text="Glance" textAlignment="center" id="kI0-1b-0GU"/>
+                            </items>
+                        </group>
+                        <group alignment="left" id="eew-Gs-W6Y">
+                            <items>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="This is the text that will display when your glance is shown." textAlignment="center" numberOfLines="0" id="8JQ-fa-osy"/>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="glanceText" destination="8JQ-fa-osy" id="AiU-Qa-XQk"/>
+                        <outlet property="glanceTitle" destination="kI0-1b-0GU" id="Ygb-hJ-bl7"/>
+                    </connections>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="164" y="514"/>
+            <point key="canvasLocation" x="164" y="744"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="heG-iy-Dwg">
+            <objects>
+                <notificationController id="NKX-ks-QiZ">
+                    <items>
+                        <label alignment="left" text="RSS Updated" id="hX0-M5-46n"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="EyG-es-GGw">
+                        <color key="sashColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="hX0-M5-46n" id="9Mo-Gg-CZt"/>
+                        <segue destination="gZp-eY-mIw" kind="relationship" relationship="dynamicNotificationInterface" id="1Hz-sO-A0L"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="164" y="478"/>
+        </scene>
+        <!--Shows-->
+        <scene sceneID="MtA-9G-65I">
+            <objects>
+                <controller identifier="showDetail" title="Shows" id="bRu-Ev-Dmt" customClass="showDetailInterfaceController" customModule="iTunesTV_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="30" alignment="left" text="Show Title" textAlignment="center" id="tiL-Eb-aV8"/>
+                        <label width="1" alignment="left" text="Label" numberOfLines="0" id="epK-Z5-HqF"/>
+                    </items>
+                    <connections>
+                        <outlet property="showDetails" destination="epK-Z5-HqF" id="cve-C4-VbF"/>
+                        <outlet property="showTitle" destination="tiL-Eb-aV8" id="7MV-nl-zQM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="448" y="220"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="avK-fb-oRt">
+            <objects>
+                <controller id="gZp-eY-mIw" customClass="NotificationController" customModule="iTunesTV_WatchKit_Extension">
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="464" y="478"/>
         </scene>
     </scenes>
 </document>

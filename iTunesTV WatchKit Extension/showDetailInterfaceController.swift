@@ -1,26 +1,24 @@
 //
-//  GlanceController.swift
-//  iTunesTV WatchKit Extension
+//  showDetailInterfaceController.swift
+//  iTunesTV
 //
-//  Created by Drew Westcott on 31/12/2015.
-//  Copyright © 2015 Drew Westcott. All rights reserved.
+//  Created by Drew Westcott on 17/01/2016.
+//  Copyright © 2016 Drew Westcott. All rights reserved.
 //
 
 import WatchKit
 import Foundation
 
 
-class GlanceController: WKInterfaceController {
+class showDetailInterfaceController: WKInterfaceController {
 
-    @IBOutlet var glanceTitle: WKInterfaceLabel!
-    @IBOutlet var glanceText: WKInterfaceLabel!
+    @IBOutlet var showTitle: WKInterfaceLabel!
+    @IBOutlet var showDetails: WKInterfaceLabel!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-        glanceTitle.setText("New Show")
-        glanceTitle.setTextColor(UIColor.greenColor())
     }
 
     override func willActivate() {
